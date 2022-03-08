@@ -1,0 +1,541 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Fredoka:wght@300;400;500&display=swap);
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    
+}
+/* main background img*/
+.background_slider{
+    position: relative;
+    background-image: url('backgroundimgj.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 1110px;
+    height: 100%;
+    margin: 0px auto;
+    -webkit-box-shadow: 5px 5px 15px 5px #FFFFFF; 
+    box-shadow: 1px -6px 31px 4px rgba(0,0,0,0.75);
+    z-index: 1;
+    overflow: hidden;
+}
+.b-con{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+    color: rgb(245, 245, 245);
+    z-index: 9;
+    inset: 25% 0% 0% 0%;
+    --tt-key: logotextlarg;
+    z-index: 11;
+    text-align: center;
+    width: 100vw;
+    height: 2ch;
+    
+}
+.f-con{
+    position: absolute;
+    --tt-key: logotextlargx;
+    text-align: center;
+    width: 100vw;
+    height: 2ch;
+    inset: 26% 0% 0% 0%;
+    z-index: 11;
+    
+
+}
+.min-eb{
+    z-index: 9;
+    padding-left: 1rem;
+}
+.min-ef{
+    z-index: 11;
+    
+}
+
+/*elephant text */
+.etext{
+    font-family: 'Poppins', sans-serif;
+    --tt-key: logotextlargx;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 2rem;
+    
+
+}
+/*elephant text color*/
+.trn{
+    color: transparent;
+
+}
+.vis{
+   color: #fff;
+   border: none;
+
+}
+
+/* elephant front img*/
+.f-img{
+    position: absolute;
+    background-image: url('backgroundimgf.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+/**/
+.top_blur{
+    position: absolute;
+    
+}
+
+/*content alignment container*/
+.continer{
+    width: 87%;
+    margin: 0px auto;
+    padding-top: 1.5rem;
+    z-index: 50;
+}
+
+/* top navigation*/
+.nav_con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid rgba(155, 158, 158, 0.411) 2px;
+    padding: 0rem 0 1rem 0;
+}
+/*top nav log*/
+.log_span{
+    font-family: 'Poppins', sans-serif;
+    --tt-key: logtext;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.4rem;
+    color: #FFFFFF; 
+}
+/*top nav middle items*/
+
+.middle_nav_ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: min(1rem, 2rem);
+}
+.middle_nav_ul li{
+    list-style: none;
+    padding: 0 2rem 0 0;
+}
+.middle_nav_ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    --tt-key: para;
+}
+/*top nav menu toggle*/
+.fa-solid{
+    
+    color: white;
+    cursor: pointer;
+
+}
+.menu_toggle_con{
+    background-color: transparent;
+    border: none;
+}
+.menu_toggle_con :hover{
+    font-size: 1rem;
+}
+
+/*bottom content */
+.bottom_con{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: solid rgba(155, 158, 158, 0.411) 2px;
+    z-index: 50;
+}
+.para {
+    margin-right: 1rem;
+    grid-row: 1 /span 2;
+    grid-column: 1 /span 1;
+}
+.para p{
+    letter-spacing: 0.03rem;
+    --tt-key: para01;
+    max-width: 48ch;
+    color: rgba(199, 199, 199, 0.912);
+}
+.slide_nvi_con{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-row: 1 /span 2;
+    grid-column: 2 /span 1;
+}
+.background_slider{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.slide_count_span{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 300;
+    --tt-key: para;
+    max-width: 9rem;
+    width: 100%;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    padding-bottom: .5rem;
+    
+}
+/*bottom slider navigater*/
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6px;
+    max-width: 9.5rem;
+    width: 100%;
+}
+.td{
+    max-width: 2.6rem;
+    max-height: 3px;
+    width: 100%;
+    height: 100%;
+   
+}
+.tdl{
+   
+    max-width: 3rem;
+    max-height: 3px;
+    width: 100%;
+    height: 100%;
+   
+}
+.td_col1{
+    
+    background-color: rgb(138, 138, 138);
+}
+.td_col2{
+    background-color: white;
+    
+}
+.td_col3{
+   
+    background-color: rgb(138, 138, 138);
+
+}
+.mobile_hero_text{
+    position: absolute;
+    display: none;
+}
+/*bottom para font size*/
+
+@keyframes para01{
+    0%{
+        font-size: 0.5rem;
+        font-weight: 200;
+    }
+    100%{
+        font-size: .7rem;
+        font-weight: 400;
+    }
+}
+/*para font size*/
+@keyframes para{
+    0%{
+        font-size: 0.5rem;
+        
+    }
+    100%{
+        font-size: .7rem;
+       
+    }
+}
+/*top nav log text font size*/
+@keyframes logotext{
+    0%{
+        font-size: 1.5rem;
+        
+    }
+    100%{
+        font-size: 3rem;
+        
+    }
+}
+/*top nav log text font size*/
+@keyframes logotextlarg{
+    0%{
+        font-size: .7rem;
+        
+    }
+    100%{
+        font-size: 2rem;
+        
+    }
+}
+@keyframes logotextlargx{
+    0%{
+        font-size: .5rem;
+        font-weight: 500;
+        letter-spacing: 1.5rem;
+        
+    }
+    50%{
+        font-size: 4rem;
+        
+    }
+    100%{
+        font-size: 10rem;
+        
+    }
+}
+/* top nav menu toggle icon font size*/
+@keyframes menutoggle{
+    0%{
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    100%{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+/* bottom slider navigator*/
+@keyframes sliderWH{
+    0%{
+        font-size: .4rem;
+        
+    }
+    100%{
+        font-size: 1rem;
+        
+    }
+}
+@keyframes togglemenuitems{
+    0%{
+        font-size: 5rem;
+        
+    }
+    100%{
+        font-size: 10rem;
+        
+    }
+}
+@media screen and (max-width:1650px) {
+   
+   
+    .background_slider{
+        min-height: 910px;
+    }
+}
+@media screen and (max-width:1450px) {
+  
+   
+    .bottom_con{
+        margin-bottom: 2rem;
+    }
+    .background_slider{
+        min-height: 900px;
+    }
+    
+}
+@media screen and (max-width:1232px) {
+    .mobile_hero_text{
+       
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 100vw;
+        height: 2ch;
+        inset: 33% 0% 0% 0%;
+        z-index: 15;
+    }
+    .mobile_hero_text span{
+        font-family: 'Poppins', sans-serif;
+        --tt-key: logotextlargx;
+        font-weight: 700;
+        line-height: 2rem;
+        letter-spacing: 2rem;
+        color: rgb(255, 253, 253);
+        
+    }
+    .f-con{
+        display: none;
+    }
+   
+   
+}
+
+@media screen and (max-width:550px) {
+    .mobile_hero_text span{
+        letter-spacing: .8rem;
+        
+    }
+    .mobile_hero_text{
+       
+        inset: 36% 0% 0% 0%;
+        padding-left: 20px ;
+    }
+    .b-con{
+        inset: 32% 0% 0% 0%;
+    }
+    .bottom_con{
+        margin-bottom: 1rem;
+        gap: 10px;
+        
+    }
+    .continer{
+        padding-top: 2rem;
+        
+        
+    }
+    .para {
+        grid-row: 1 /span 1;
+        grid-column: 1 /span 2;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .slide_nvi_con{
+        grid-row: 2 /span 1;
+        grid-column: 1 /span 2;
+        justify-content: center;
+        align-items: center;
+    }
+    .slide_count_span{
+        text-align: center;
+        max-width: none;
+    }
+    .background_slider{
+        position: relative;
+    }
+    .middle_nav_con{
+        position: absolute;
+        z-index: 200;
+        width: 87%;
+        height: 78%;
+        margin: 0 auto;
+        inset: 5rem 0px 0px 0px;
+        background: hsl(0 0% 0% / 0.7);
+        transform: translatex(110%);
+        transition: transform 350ms ease-in-out;
+        
+    }
+    .middle_nav_con ul li a{
+        color: rgb(216, 212, 212);
+    }
+    .middle_nav_con.active{
+        position: absolute;
+        z-index: 200;
+        width: 87%;
+        height: 78%;
+        margin: 0 auto;
+        inset: 5rem 0px 0px 0px;
+        background: hsl(0 0% 0% / 0.7);
+        box-shadow: 1px 3px 24px 0px rgba(0,0,0,0.77);
+        transform: translatex(0%);
+        transition: transform 250ms ease-in-out;
+    }
+
+    @supports (backdrop-filter: blur(1rem)){
+        .middle_nav_con{
+            background: hsl(0 0% 100% / 0.01);
+            backdrop-filter: blur(1rem);
+        }
+        .middle_nav_con.active{
+            background: hsl(0 0% 100% / 0.01);
+            backdrop-filter: blur(1rem);
+        }
+    }
+    .middle_nav_ul{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+       
+       
+    }
+    .middle_nav_con ul li{
+        padding: 0 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        --tt-key: para;
+        margin: 1rem auto;
+
+    }
+    .i a:hover{
+        --tt-key: parahover;
+        color: #fff;
+    }
+/*para font size*/
+@keyframes para{
+    0%{
+        font-size: 0.5rem;
+        
+    }
+    100%{
+        font-size: 2rem;
+      
+    }
+}
+@keyframes parahover{
+    0%{
+        font-size: 0.5rem;
+        
+    }
+    100%{
+        font-size: 3rem;
+      
+    }
+}
+
+}
+@media screen and (max-width: 400px) {
+   
+    .bottom_con{
+       padding-top: 1rem;
+    }
+    .mobile_hero_text span{
+        letter-spacing: 0;
+        
+    }
+
+}
